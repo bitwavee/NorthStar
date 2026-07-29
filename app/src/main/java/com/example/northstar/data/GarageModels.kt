@@ -25,6 +25,10 @@ data class Ride(
     val avgSpeedMps: Double,
     val maxSpeedMps: Double,
     val trackPolyline: String = "",   // Google/OSRM-encoded lat/lng path
+    val name: String = "",
+    val elevationProfile: String = "",
+    val elevationGainM: Double = 0.0,
+    val maxLeanDeg: Double = 0.0,
     val startLat: Double = 0.0,
     val startLng: Double = 0.0,
     val endLat: Double = 0.0,

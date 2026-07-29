@@ -69,7 +69,7 @@ object GpxImport {
         val route = Route(
             geometry = points, maneuvers = maneuvers,
             totalMeters = totalMeters, totalSeconds = totalSeconds,
-            cumulative = cum, cumulativeSeconds = cumSeconds,
+            cumulative = cum,
         )
         return (trackName ?: fallbackName) to route
     }
